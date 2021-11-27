@@ -28,16 +28,15 @@
 
 .footer .connection div {
   /* display: flex;
-  height: 50px;
   width: 200px;
+  height: 50px;
   transition: all ease 0.5s; */
   padding: 10px;
   --border-color: red;
   --border-width: 1px;
   --bottom-distance: 2px; /* you can increase this */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   letter-spacing: 5px;
   background-image: linear-gradient(var(--border-color), var(--border-color));
   background-size: 0% var(--border-width);
@@ -71,6 +70,10 @@
 .footer .connection div a {
   text-decoration: none;
   color: white;
+}
+
+.footer .connection div a i {
+  padding-top: 10px;
 }
 
 .footer-title {
