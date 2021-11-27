@@ -27,15 +27,53 @@
 }
 
 .footer .connection div {
+  /* display: flex;
+  height: 50px;
+  width: 200px;
+  transition: all ease 0.5s; */
+  padding: 10px;
+  --border-color: red;
+  --border-width: 1px;
+  --bottom-distance: 2px; /* you can increase this */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  width: 200px;
-  transition: all ease 0.2s;
+  letter-spacing: 5px;
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: all ease 0.3s;
+}
+/* 
+.footer .connection div:hover {
+  letter-spacing: 10px;
+  border-bottom: 1px solid red;
+} */
+
+.footer .connection div:after {
+  display: block;
+  letter-spacing: 10px;
+  border-bottom: 1px solid red;
+  /* content: ''; */
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.link-footer {
+  background-position: 50% calc(100% - var(--bottom-distance));
 }
 
 .footer .connection div:hover {
   letter-spacing: 10px;
-  border-radius: 20px;
+  background-size: 100% var(--border-width);
+}
+
+.footer .connection div a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-title {
+  font-size: 30px;
+  letter-spacing: 10px;
 }
