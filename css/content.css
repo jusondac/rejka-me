@@ -1,0 +1,29 @@
+/* CONTENT */
+
+.content {
+  background: black;
+  height: var(--content-height);
+  overflow-y: hidden;
+}
+
+.content img {
+  width: var(--content-heigh);
+  /* 90, 180, 270, 360 */
+  /* background-image: url(/homework/img/image_me.jpg); */
+  mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  object-fit: cover;
+
+}
+
+.main-text {
+  color:rgb(158, 158, 158);
+  transform: translate(30px,-400px);
+  font-size: 40px;
+}
+
+.main-title {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 7px;
+}
