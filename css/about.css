@@ -6,7 +6,7 @@
   padding: 100px 40px;
   background: black;
   text-align: center;
-  height: 600px;
+  height: 700px;
   width: auto;
 }
 
@@ -18,6 +18,43 @@
 
 .about-content  .description {
   font-size: 40px;
+}
+
+.education-type {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.education-type .edu {
+  width: 400px;
+  margin: 20px;
+}
+
+.education-type .edu-special {
+  width: 700px;
+}
+
+.education-type .edu .edu-name{
+  font-size: 30px;
+  letter-spacing:3px;
+}
+
+.education-type .edu-special .edu-name{
+  font-size: 40px;
+  letter-spacing:3px;
+}
+
+.education-type .edu .edu-date{
+  font-size: 14px;
+  color: gray;
+  letter-spacing:3px;
+}
+
+.education-type .edu-special .edu-date{
+  font-size: 14px;
+  color: gray;
+  letter-spacing:3px;
 }
 
 .about-content h1 {
